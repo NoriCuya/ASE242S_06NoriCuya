@@ -8,11 +8,17 @@
 
 .card {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;       
+  border: 4px solid #9b59b6; 
   padding: 25px;
-  width: 350px;
+  width: 360px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .avatar {
@@ -23,10 +29,23 @@
   margin-bottom: 15px;
 }
 
+/* Nombre, carrera y edad con tipografía elegante */
+h1 {
+  font-family: 'Roboto Slab', serif; /* Nombre */
+  font-size: 24px;
+  color: #5b2f6b;
+  margin-bottom: 8px;
+}
+
+.datos {
+  font-family: 'Open Sans', sans-serif; /* Carrera, edad, correo */
+  font-size: 14px;
+  color: #5b2f6b;
+}
+
 .datos span {
   display: inline-block;
   margin: 3px 0;
-  color: #5b2f6b;
 }
 
 .acciones {
@@ -48,19 +67,30 @@ button:hover {
   background-color: #7b3b8b;
 }
 
+/* Hobbies y skills centrados con tipografía distinta */
 .extra {
-  margin-top: 10px;
-  text-align: left;
+  margin-top: 15px;
+  text-align: center; /* Centrado */
+  font-family: 'Verdana', sans-serif;
 }
 
 .extra h3 {
   color: #5b2f6b;
   margin-bottom: 5px;
+  font-family: 'Georgia', serif; /* títulos de sección */
 }
 
 .extra ul {
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 0;
   padding: 0;
+  list-style-type: circle;
+  display: inline-block; /* Centrado */
+  text-align: left; /* bullets alineados */
+}
+
+.extra ul li {
+  margin: 3px 0;
+  font-size: 14px;
 }
 
 .frase {
@@ -68,4 +98,5 @@ button:hover {
   color: #7b3b8b;
   text-align: center;
   margin-top: 10px;
+  font-family: 'Courier New', monospace;
 }
