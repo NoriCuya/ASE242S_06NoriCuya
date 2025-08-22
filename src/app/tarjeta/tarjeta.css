@@ -1,0 +1,71 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3e8ff;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #9b59b6;
+  margin-bottom: 15px;
+}
+
+.datos span {
+  display: inline-block;
+  margin: 3px 0;
+  color: #5b2f6b;
+}
+
+.acciones {
+  margin: 15px 0;
+}
+
+button {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #7b3b8b;
+}
+
+.extra {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.extra h3 {
+  color: #5b2f6b;
+  margin-bottom: 5px;
+}
+
+.extra ul {
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
+
+.frase {
+  font-style: italic;
+  color: #7b3b8b;
+  text-align: center;
+  margin-top: 10px;
+}
